@@ -1,56 +1,56 @@
 <!doctype html>
 <html>
 <head>
+<!--Easy Private Export-->
 <link rel="stylesheet" href="/css/style.css">
+
+<!--
 <link rel="icona" href="/favicon.ico" type="image/x-icon">
 <script src="/js/menu.js"></script>
-
-
-
-<title>reliquum</title>
-
-
+-->
+  <title>reliquum</title>
 </head>
 
 <body>
+
+
+  <h1 class="titolo-principale">ReliQuum</h1>
+
+  {{{_sections.head}}}
+
  <header>
 
+  <!--Menu provvisorio-->
+<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197">
+  <ul >
+  <li><a href="/" class="active">Diario</a></li>
+  <li><a href="/listacibi" >Cibi</a></li>
+  <li><a href="/manuale" >Manuale</a></li>
+  <li><a href="/info" >Info</a></li>
+  <li><a href="/impostazioni" >Impostazioni</a></li>
+</ul>
+</nav>
 
 
-<!-- MENU LATERALE SINISTRO-->
-   <div class="" style="display:none; " id="menu-sin-sidebar">
-     <button class="" onclick="close_menu ()">&times;</button>
-     <br>
-     <li>                                                               <!--Da verificare la correttezza-->
-     <a href="/" class="">Diario</a>
-     <a href="/listacibi" class="">Cibi</a>
-     <a href="/impostazioni" class="">Impostazioni</a>
-     <a href="/manuale" class="">Manuale Utente</a>
-     <a href="/info" class="">Info</a>
-</li>
-   </div>
 
-
-<div style="background-color:#A52A2A;" id="main">
-<div class="">
-
-  <button id="apertura-nav" class="" onclick="open_menu ()">&#9776;</button>
-
+<div class="principale-nox-white">
+  <div class="white-text">
+{{{body}}}
+  </div>
 </div>
-
-
  </header>
 
- <!--INTESTAZIONE PAGINA DESIDERATA-->
-{{{body}}}
+    <!--INTESTAZIONE PAGINA DESIDERATA-->
 
+  <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+   {{{_sections.jquery}}}
 </body>
 
 
 
 <!--COLOPHON-->
 <footer>
-  <p>Corso Programmazione Web Mobile</p>
-  <a href="mailto:marco.delfabbro@studenti.unimi.it"</a>&copy;Marco Del Fabbro  {{{copyrightYear}}}
+  <p class="colophon">Corso Programmazione Web Mobile</p>
+  <a class="colophon" href="mailto:marco.delfabbro@studenti.unimi.it"</a>&copy;Marco Del Fabbro  {{{copyrightYear}}}
 </footer>
 </html>
